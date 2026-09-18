@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réalisations — Sadiloop</title>
+<meta name="description" content="MangaSpace et El Futuro — deux projets web complets, du design à la base de données.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.svg" alt="Sadiloop">
+    Sadiloop
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="work.html" class="active">Réalisations</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="work.html">Réalisations</a>
+  <a href="about.html">À propos</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page-header reveal">
+  <div class="section-tag">Réalisations</div>
+  <h1 class="section-title">Des projets concrets,<br>pas des promesses.</h1>
+  <p class="section-desc">Clique sur une maquette pour l'agrandir et voir le détail du design.</p>
+</div>
+
+<section class="section" style="padding-top:0;">
+  <div class="section-inner">
+    <div class="work-grid reveal-stagger">
+      <div class="work-card" style="cursor:default;">
+        <div class="work-thumb" data-lightbox>
+          <img src="assets/mockup-mangaspace.png" alt="Aperçu du site MangaSpace, page d'accueil">
+          <div class="work-thumb-overlay"><span class="work-view-btn">Agrandir 🔍</span></div>
+        </div>
+        <div class="work-body">
+          <div class="work-title">MangaSpace</div>
+          <div class="work-tags">
+            <span class="work-tag">Next.js</span>
+            <span class="work-tag">Prisma</span>
+            <span class="work-tag">Auth</span>
+          </div>
+          <p class="work-desc">Réseau social pour fans d'anime/manga : création de compte, fil de publication avec likes et commentaires, recherche d'utilisateurs, système de follow, et groupes de discussion par communauté (un peu comme Instagram, mais pour les otakus).</p>
+        </div>
+      </div>
+
+      <div class="work-card" style="cursor:default;">
+        <div class="work-thumb" data-lightbox>
+          <img src="assets/mockup-elfuturo.png" alt="Aperçu du site El Futuro, page d'accueil">
+          <div class="work-thumb-overlay"><span class="work-view-btn">Agrandir 🔍</span></div>
+        </div>
+        <div class="work-body">
+          <div class="work-title">El Futuro — Agence Sportive</div>
+          <div class="work-tags">
+            <span class="work-tag">HTML/CSS/JS</span>
+            <span class="work-tag">Supabase</span>
+            <span class="work-tag">SEO</span>
+          </div>
+          <p class="work-desc">Site vitrine pour une agence de basketball représentant des jeunes talents africains : formulaire de candidature en ligne, panel d'administration pour gérer les joueurs et actualités, formulaire de contact sécurisé, nom de domaine personnalisé et référencement optimisé.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark); text-align:center;">
+  <div class="section-inner reveal" style="max-width:700px; margin:0 auto; text-align:center;">
+    <h2 class="section-title">Ton projet pourrait être le prochain.</h2>
+    <a href="contact.html" class="btn-primary">Demander un devis →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo"><img src="assets/logo.svg" alt="">Sadiloop</div>
+  <div class="footer-copy">© 2026 Sadiloop · Développeur Web Freelance</div>
+  <div class="footer-social">
+    <a href="https://github.com/Aguibou-vie" target="_blank" rel="noopener" title="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.02 1.01-2.73-.1-.26-.44-1.3.1-2.71 0 0 .83-.27 2.72 1.04a9.28 9.28 0 0 1 2.48-.34c.84 0 1.69.11 2.48.34 1.89-1.31 2.72-1.04 2.72-1.04.54 1.41.2 2.45.1 2.71.63.71 1.01 1.62 1.01 2.73 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"></path></svg>
+    </a>
+    <a href="mailto:sadibousow11@gmail.com" title="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6z"></path>
+        <path d="m22 6-10 7L2 6"></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

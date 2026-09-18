@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Sadiloop</title>
+<meta name="description" content="Formules de développement web : site vitrine, site avec back-office, maintenance. Tarifs clairs, sans surprise.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.svg" alt="Sadiloop">
+    Sadiloop
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="work.html">Réalisations</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="work.html">Réalisations</a>
+  <a href="about.html">À propos</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page-header reveal">
+  <div class="section-tag">Ce que je propose</div>
+  <h1 class="section-title">Des formules claires,<br>sans surprise.</h1>
+  <p class="section-desc">Chaque projet part d'un besoin précis — voici les trois formats les plus courants. On ajuste ensemble selon ton besoin réel lors d'un premier échange gratuit.</p>
+</div>
+
+<section class="section" style="padding-top:0;">
+  <div class="section-inner">
+    <div class="services-grid reveal-stagger">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            <line x1="3" y1="9" x2="21" y2="9"></line>
+          </svg>
+        </div>
+        <div class="service-title">Site Vitrine</div>
+        <div class="service-desc">3 à 5 pages, formulaire de contact, responsive mobile, optimisé pour être trouvé sur Google. Idéal pour se présenter en ligne rapidement.</div>
+        <div class="service-price">300-600€ <span>/ projet</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+          </svg>
+        </div>
+        <div class="service-title">Site + Back-office</div>
+        <div class="service-desc">Base de données, panel d'administration pour gérer le contenu toi-même, comptes utilisateurs si besoin. Pour les projets qui évoluent dans le temps.</div>
+        <div class="service-price">600-1200€ <span>/ projet</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"></path>
+            <path d="M12 8v4l3 3"></path>
+          </svg>
+        </div>
+        <div class="service-title">Maintenance</div>
+        <div class="service-desc">Mises à jour, petites modifications, surveillance et corrections — pour garder ton site en bon état sans t'en occuper toi-même.</div>
+        <div class="service-price">30-80€ <span>/ mois</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark);">
+  <div class="section-inner reveal">
+    <div class="section-tag">Comment ça se passe</div>
+    <h2 class="section-title">Un processus simple, en 4 étapes.</h2>
+    <div class="services-grid" style="grid-template-columns:repeat(4,1fr); margin-top:40px;">
+      <div>
+        <div class="service-icon" style="margin-bottom:16px;">1</div>
+        <div class="service-title" style="font-size:16px;">Échange</div>
+        <p class="service-desc">On discute de ton besoin, sans engagement.</p>
+      </div>
+      <div>
+        <div class="service-icon" style="margin-bottom:16px;">2</div>
+        <div class="service-title" style="font-size:16px;">Devis</div>
+        <p class="service-desc">Périmètre et prix précis, par écrit.</p>
+      </div>
+      <div>
+        <div class="service-icon" style="margin-bottom:16px;">3</div>
+        <div class="service-title" style="font-size:16px;">Développement</div>
+        <p class="service-desc">Points d'étape réguliers avec aperçu en direct.</p>
+      </div>
+      <div>
+        <div class="service-icon" style="margin-bottom:16px;">4</div>
+        <div class="service-title" style="font-size:16px;">Livraison</div>
+        <p class="service-desc">Site en ligne, accès transférés, tu es autonome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="text-align:center;">
+  <div class="section-inner reveal" style="max-width:700px; margin:0 auto; text-align:center;">
+    <h2 class="section-title">Prêt à démarrer ?</h2>
+    <a href="contact.html" class="btn-primary">Demander un devis →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo"><img src="assets/logo.svg" alt="">Sadiloop</div>
+  <div class="footer-copy">© 2026 Sadiloop · Développeur Web Freelance</div>
+  <div class="footer-social">
+    <a href="https://github.com/Aguibou-vie" target="_blank" rel="noopener" title="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.02 1.01-2.73-.1-.26-.44-1.3.1-2.71 0 0 .83-.27 2.72 1.04a9.28 9.28 0 0 1 2.48-.34c.84 0 1.69.11 2.48.34 1.89-1.31 2.72-1.04 2.72-1.04.54 1.41.2 2.45.1 2.71.63.71 1.01 1.62 1.01 2.73 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"></path></svg>
+    </a>
+    <a href="mailto:sadibousow11@gmail.com" title="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6z"></path>
+        <path d="m22 6-10 7L2 6"></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

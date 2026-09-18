@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — Sadiloop</title>
+<meta name="description" content="Développeur web freelance basé en Espagne — sécurité, rapidité et transparence à chaque projet.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.svg" alt="Sadiloop">
+    Sadiloop
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="work.html">Réalisations</a></li>
+    <li><a href="about.html" class="active">À propos</a></li>
+    <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="work.html">Réalisations</a>
+  <a href="about.html">À propos</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="page-header reveal">
+  <div class="section-tag">À propos</div>
+  <h1 class="section-title">Salut, moi c'est Sadiloop.</h1>
+</div>
+
+<section class="section" style="padding-top:0;">
+  <div class="section-inner">
+    <div class="about-grid reveal">
+      <div>
+        <p style="color:var(--gray-light); font-size:18px; line-height:1.7;">Je construis des sites web complets — du design à la base de données — avec une attention particulière portée à la sécurité et à la qualité finale.</p>
+      </div>
+      <div class="about-text">
+        <p>J'ai mis mes études en pause pour me consacrer à des projets concrets et développer une activité freelance — l'objectif est d'y retourner une fois cette activité stable. En attendant, chaque projet client est traité avec le même sérieux qu'un travail d'études : cahier des charges clair, code propre, résultat testé avant livraison.</p>
+        <p>Basé en Espagne, je travaille avec des clients à distance, partout en Europe.</p>
+        <div class="skills-list">
+          <span class="skill-pill">HTML / CSS / JS</span>
+          <span class="skill-pill">React / Next.js</span>
+          <span class="skill-pill">Supabase</span>
+          <span class="skill-pill">Sécurité web</span>
+          <span class="skill-pill">SEO</span>
+          <span class="skill-pill">UI / UX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark);">
+  <div class="section-inner reveal">
+    <div class="section-tag">Comment je travaille</div>
+    <h2 class="section-title">Trois principes, sur chaque projet.</h2>
+
+    <div class="services-grid reveal-stagger" style="margin-top:40px;">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <div class="service-title">Sécurité</div>
+        <div class="service-desc">Formulaires protégés, permissions de base de données vérifiées, pas de faille laissée derrière. Ce n'est pas une option, c'est inclus.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+        </div>
+        <div class="service-title">Rapidité</div>
+        <div class="service-desc">Un site simple peut être en ligne en une à deux semaines. Pas de retard silencieux — tu sais toujours où en est ton projet.</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <div class="service-title">Transparence</div>
+        <div class="service-desc">Devis écrit avant de commencer, points d'étape réguliers, aucune surprise sur la facture finale.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="text-align:center;">
+  <div class="section-inner reveal" style="max-width:700px; margin:0 auto; text-align:center;">
+    <h2 class="section-title">On travaille ensemble ?</h2>
+    <a href="contact.html" class="btn-primary">Demander un devis →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo"><img src="assets/logo.svg" alt="">Sadiloop</div>
+  <div class="footer-copy">© 2026 Sadiloop · Développeur Web Freelance</div>
+  <div class="footer-social">
+    <a href="https://github.com/Aguibou-vie" target="_blank" rel="noopener" title="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.02 1.01-2.73-.1-.26-.44-1.3.1-2.71 0 0 .83-.27 2.72 1.04a9.28 9.28 0 0 1 2.48-.34c.84 0 1.69.11 2.48.34 1.89-1.31 2.72-1.04 2.72-1.04.54 1.41.2 2.45.1 2.71.63.71 1.01 1.62 1.01 2.73 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"></path></svg>
+    </a>
+    <a href="mailto:sadibousow11@gmail.com" title="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6z"></path>
+        <path d="m22 6-10 7L2 6"></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

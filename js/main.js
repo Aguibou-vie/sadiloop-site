@@ -4,11 +4,45 @@ function toggleMenu() {
 
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('navbar');
+  if (!nav) return;
   if (window.scrollY > 40) {
     nav.style.background = 'rgba(5,5,10,0.98)';
   } else {
     nav.style.background = 'rgba(5,5,10,0.85)';
   }
+});
+
+// ===== Scroll reveal animations =====
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-stagger').forEach((el) => {
+  revealObserver.observe(el);
+});
+
+// ===== Lightbox for project mockups =====
+function openLightbox(src, alt) {
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.innerHTML = `<img src="${src}" alt="${alt}"><button class="lightbox-close" aria-label="Fermer">✕</button>`;
+  overlay.addEventListener('click', () => overlay.remove());
+  document.body.appendChild(overlay);
+  requestAnimationFrame(() => overlay.classList.add('open'));
+}
+
+document.querySelectorAll('[data-lightbox]').forEach((el) => {
+  el.style.cursor = 'zoom-in';
+  el.addEventListener('click', (e) => {
+    e.preventDefault();
+    const img = el.querySelector('img');
+    openLightbox(img.src, img.alt);
+  });
 });
 
 function showError(text) {
