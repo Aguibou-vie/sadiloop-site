@@ -17,7 +17,6 @@
 <nav id="navbar">
   <a href="index.html" class="nav-logo">
     <img src="assets/logo.svg?v=3" alt="Sadiloop">
-    SL
   </a>
   <ul class="nav-links">
     <li><a href="index.html">Accueil</a></li>
@@ -43,43 +42,84 @@
 <div class="page-header reveal">
   <div class="section-tag">Réalisations</div>
   <h1 class="section-title">Des projets concrets,<br>pas des promesses.</h1>
-  <p class="section-desc">Clique sur une maquette pour l'agrandir et voir le détail du design.</p>
+  <p class="section-desc">Fais défiler l'aperçu à l'intérieur de chaque carte pour voir plusieurs sections du site en situation réelle — ou clique pour l'agrandir.</p>
 </div>
 
 <section class="section" style="padding-top:0;">
   <div class="section-inner">
-    <div class="work-grid reveal-stagger">
-      <div class="work-card" style="cursor:default;">
-        <div class="work-thumb" data-lightbox>
-          <img src="assets/mockup-mangaspace.png" alt="Aperçu du site MangaSpace, page d'accueil">
-          <div class="work-thumb-overlay"><span class="work-view-btn">Agrandir 🔍</span></div>
+    <div class="case-list reveal-stagger">
+
+      <div class="work-case">
+        <div class="work-preview" data-lightbox>
+          <img src="assets/mockup-mangaspace.png" alt="Aperçu défilant du site MangaSpace">
+          <div class="work-scroll-hint">↕ Fais défiler pour voir plus</div>
         </div>
-        <div class="work-body">
+        <div class="work-info">
           <div class="work-title">MangaSpace</div>
           <div class="work-tags">
             <span class="work-tag">Next.js</span>
             <span class="work-tag">Prisma</span>
             <span class="work-tag">Auth</span>
+            <span class="work-tag">SQLite</span>
           </div>
-          <p class="work-desc">Réseau social pour fans d'anime/manga : création de compte, fil de publication avec likes et commentaires, recherche d'utilisateurs, système de follow, et groupes de discussion par communauté (un peu comme Instagram, mais pour les otakus).</p>
+          <p class="work-desc">Réseau social pensé pour les fans d'anime et de manga — un peu comme Instagram, mais centré sur cette communauté, avec ses propres communautés par série.</p>
+          <ul class="work-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Comptes utilisateurs et authentification sécurisée
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Fil de publications avec likes et commentaires en direct
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Recherche d'utilisateurs et système d'abonnement (follow)
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Groupes de discussion par communauté
+            </li>
+          </ul>
+          <span class="work-view-full" data-lightbox-trigger>Voir l'aperçu en grand →</span>
         </div>
       </div>
 
-      <div class="work-card" style="cursor:default;">
-        <div class="work-thumb" data-lightbox>
-          <img src="assets/mockup-elfuturo.png" alt="Aperçu du site El Futuro, page d'accueil">
-          <div class="work-thumb-overlay"><span class="work-view-btn">Agrandir 🔍</span></div>
+      <div class="work-case">
+        <div class="work-preview" data-lightbox>
+          <img src="assets/mockup-elfuturo.png" alt="Aperçu défilant du site El Futuro">
+          <div class="work-scroll-hint">↕ Fais défiler pour voir plus</div>
         </div>
-        <div class="work-body">
+        <div class="work-info">
           <div class="work-title">El Futuro — Agence Sportive</div>
           <div class="work-tags">
             <span class="work-tag">HTML/CSS/JS</span>
             <span class="work-tag">Supabase</span>
             <span class="work-tag">SEO</span>
           </div>
-          <p class="work-desc">Site vitrine pour une agence de basketball représentant des jeunes talents africains : formulaire de candidature en ligne, panel d'administration pour gérer les joueurs et actualités, formulaire de contact sécurisé, nom de domaine personnalisé et référencement optimisé.</p>
+          <p class="work-desc">Site vitrine pour une agence de basketball représentant des jeunes talents africains — présentation, joueurs, actualités et candidatures en ligne.</p>
+          <ul class="work-features">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Formulaire de candidature connecté à une base de données
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Panel d'administration pour gérer joueurs et actualités
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Formulaire de contact sécurisé (faille XSS corrigée en audit)
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Nom de domaine personnalisé et référencement optimisé
+            </li>
+          </ul>
+          <span class="work-view-full" data-lightbox-trigger>Voir l'aperçu en grand →</span>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -92,7 +132,7 @@
 </section>
 
 <footer>
-  <div class="footer-logo"><img src="assets/logo.svg?v=3" alt="Sadiloop">SL</div>
+  <div class="footer-logo"><img src="assets/logo.svg?v=3" alt="Sadiloop"></div>
   <div class="footer-copy">© 2026 Sadiloop · Développeur Web Freelance</div>
   <div class="footer-social">
     <a href="https://github.com/Aguibou-vie" target="_blank" rel="noopener" title="GitHub">

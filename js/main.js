@@ -37,12 +37,28 @@ function openLightbox(src, alt) {
 }
 
 document.querySelectorAll('[data-lightbox]').forEach((el) => {
-  el.style.cursor = 'zoom-in';
-  el.addEventListener('click', (e) => {
-    e.preventDefault();
+  el.addEventListener('click', () => {
     const img = el.querySelector('img');
     openLightbox(img.src, img.alt);
   });
+});
+
+document.querySelectorAll('[data-lightbox-trigger]').forEach((el) => {
+  el.addEventListener('click', () => {
+    const img = el.closest('.work-case')?.querySelector('.work-preview img');
+    if (img) openLightbox(img.src, img.alt);
+  });
+});
+
+// ===== Fade the "scroll for more" hint once the user scrolls a preview =====
+document.querySelectorAll('.work-preview').forEach((el) => {
+  el.addEventListener('scroll', () => {
+    if (el.scrollTop > 12) {
+      el.classList.add('scrolled');
+    } else {
+      el.classList.remove('scrolled');
+    }
+  }, { passive: true });
 });
 
 function showError(text) {
