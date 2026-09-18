@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sadiloop — Développeur Web Freelance</title>
+<meta name="description" content="Sites web professionnels, rapides et sécurisés — pages vitrines, sites avec back-office, maintenance. Basé en Espagne.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sadiloop — Développeur Web Freelance">
+<meta property="og:description" content="Sites web professionnels, rapides et sécurisés — pages vitrines, sites avec back-office, maintenance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/logo.svg" alt="">
+    SADI<span>LOOP</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#work">Réalisations</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#contact" class="nav-cta">Demander un devis</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#work" onclick="toggleMenu()">Réalisations</a>
+  <a href="#about" onclick="toggleMenu()">À propos</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag"><span class="dot"></span>Disponible pour de nouveaux projets</div>
+      <h1 class="hero-title">Des sites web <span class="grad">qui marchent vraiment</span>, livrés vite.</h1>
+      <p class="hero-sub">Je conçois et développe des sites professionnels — vitrine, back-office, base de données — pour indépendants et petites entreprises. Sécurisé, rapide, et pensé pour convertir.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Demander un devis →</a>
+        <a href="#work" class="btn-outline">Voir mes réalisations</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">2+</div>
+          <div class="hero-stat-label">Projets livrés</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">&lt;24h</div>
+          <div class="hero-stat-label">Temps de réponse</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">🇪🇸</div>
+          <div class="hero-stat-label">Basé en Espagne</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orbit orbit1"></div>
+      <div class="orbit orbit2"></div>
+      <img src="assets/logo.svg" alt="" class="hero-logo-mark">
+      <div class="hero-badge badge1">
+        <div class="b-label">Stack</div>
+        <div class="b-value">Next.js · Supabase</div>
+      </div>
+      <div class="hero-badge badge2">
+        <div class="b-label">Livraison</div>
+        <div class="b-value">1-3 semaines</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="section-inner">
+    <div class="section-tag">Ce que je propose</div>
+    <h2 class="section-title">Des formules claires,<br>sans surprise.</h2>
+    <p class="section-desc">Chaque projet part d'un besoin précis — voici les trois formats les plus courants, ajustables selon ton besoin réel.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            <line x1="3" y1="9" x2="21" y2="9"></line>
+          </svg>
+        </div>
+        <div class="service-title">Site Vitrine</div>
+        <div class="service-desc">3 à 5 pages, formulaire de contact, responsive mobile, optimisé pour être trouvé sur Google.</div>
+        <div class="service-price">300-600€ <span>/ projet</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+          </svg>
+        </div>
+        <div class="service-title">Site + Back-office</div>
+        <div class="service-desc">Base de données, panel d'administration pour gérer le contenu toi-même, comptes utilisateurs si besoin.</div>
+        <div class="service-price">600-1200€ <span>/ projet</span></div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"></path>
+            <path d="M12 8v4l3 3"></path>
+          </svg>
+        </div>
+        <div class="service-title">Maintenance</div>
+        <div class="service-desc">Mises à jour, petites modifications, surveillance et corrections — pour garder ton site en bon état.</div>
+        <div class="service-price">30-80€ <span>/ mois</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="section">
+  <div class="section-inner">
+    <div class="section-tag">Réalisations</div>
+    <h2 class="section-title">Quelques projets récents.</h2>
+    <p class="section-desc">Des exemples concrets de ce que je peux construire — démo disponible sur demande.</p>
+
+    <div class="work-grid">
+      <div class="work-card">
+        <div class="work-thumb thumb-manga">
+          <span class="work-thumb-label">🪐 MangaSpace</span>
+        </div>
+        <div class="work-body">
+          <div class="work-title">MangaSpace</div>
+          <div class="work-tags">
+            <span class="work-tag">Next.js</span>
+            <span class="work-tag">Prisma</span>
+            <span class="work-tag">Auth</span>
+          </div>
+          <p class="work-desc">Réseau social pour fans d'anime/manga : comptes, fil de publication, likes/commentaires, recherche, système de follow, groupes par communauté.</p>
+        </div>
+      </div>
+
+      <div class="work-card">
+        <div class="work-thumb thumb-futuro">
+          <span class="work-thumb-label">EL FUTURO</span>
+        </div>
+        <div class="work-body">
+          <div class="work-title">El Futuro — Agence Sportive</div>
+          <div class="work-tags">
+            <span class="work-tag">HTML/CSS/JS</span>
+            <span class="work-tag">Supabase</span>
+            <span class="work-tag">SEO</span>
+          </div>
+          <p class="work-desc">Site vitrine pour une agence de basketball : candidatures en ligne, panel admin, formulaire de contact sécurisé, nom de domaine personnalisé.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <div class="section-tag">À propos</div>
+        <h2 class="section-title">Salut, moi c'est Sadiloop.</h2>
+      </div>
+      <div class="about-text">
+        <p>Étudiant en informatique (SUPINFO), je construis des sites web complets — <strong>du design à la base de données</strong> — avec une attention particulière portée à la sécurité et à la qualité finale.</p>
+        <p>Je travaille actuellement à côté de mes études, ce qui m'a appris la rigueur et le respect des délais. Basé en Espagne, je peux travailler avec des clients partout en Europe.</p>
+        <div class="skills-list">
+          <span class="skill-pill">HTML / CSS / JS</span>
+          <span class="skill-pill">React / Next.js</span>
+          <span class="skill-pill">Supabase</span>
+          <span class="skill-pill">Sécurité web</span>
+          <span class="skill-pill">SEO</span>
+          <span class="skill-pill">UI / UX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" style="background:var(--dark);">
+  <div class="section-inner">
+    <div class="section-tag">Contact</div>
+    <h2 class="section-title">Discutons de ton projet.</h2>
+    <p class="section-desc">Décris-moi ton besoin, je réponds sous 24h avec un premier retour.</p>
+
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16v16H4z" opacity="0"></path>
+              <path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6z"></path>
+              <path d="m22 6-10 7L2 6"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-value"><a href="mailto:sadibousow11@gmail.com">sadibousow11@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Localisation</div>
+            <div class="contact-info-value">Espagne · disponible à distance</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"></path>
+              <path d="M12 8v4l3 3"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Délai de réponse</div>
+            <div class="contact-info-value">Sous 24h</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <form id="contactForm" onsubmit="submitContactForm(event)">
+          <div class="form-group">
+            <label class="form-label">Nom *</label>
+            <input type="text" class="form-input" id="cName" placeholder="Ton nom" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email *</label>
+            <input type="email" class="form-input" id="cEmail" placeholder="ton@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Type de projet</label>
+            <input type="text" class="form-input" id="cProject" placeholder="Site vitrine, back-office, autre...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message *</label>
+            <textarea class="form-textarea" id="cMessage" placeholder="Décris ton projet et tes besoins..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Envoyer le message</button>
+        </form>
+        <div class="success-msg" id="successMsg">✓ Message envoyé ! Je te réponds sous 24h.</div>
+        <div class="error-msg" id="errorMsg"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">SADI<span>LOOP</span></div>
+  <div class="footer-copy">© 2026 Sadiloop · Développeur Web Freelance</div>
+  <div class="footer-social">
+    <a href="https://github.com/Aguibou-vie" target="_blank" rel="noopener" title="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.11.38-2.02 1.01-2.73-.1-.26-.44-1.3.1-2.71 0 0 .83-.27 2.72 1.04a9.28 9.28 0 0 1 2.48-.34c.84 0 1.69.11 2.48.34 1.89-1.31 2.72-1.04 2.72-1.04.54 1.41.2 2.45.1 2.71.63.71 1.01 1.62 1.01 2.73 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"></path></svg>
+    </a>
+    <a href="mailto:sadibousow11@gmail.com" title="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6z"></path>
+        <path d="m22 6-10 7L2 6"></path>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
